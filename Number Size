@@ -1,0 +1,12 @@
+## Truncating Division Determines length of number.
+def getSize(num):
+        if num // 10000000000000 > 0:
+            if num // 100000000000000 > 0:
+                if num // 1000000000000000 > 0:
+                    return 16        
+                else:
+                    return 15
+            else:
+                return 14
+        else:
+            return 13
